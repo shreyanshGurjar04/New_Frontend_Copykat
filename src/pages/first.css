@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d9d8cc;
+    color: black;
+    font-family:'Poppins','Times New Roman', Times, serif;
+}
+
+.logo{
+  margin-left: 0px;
+}
+
+.page {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.center-area {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bttn{
+    background-color: #ffd400;
+    color: black;
+    font-size: 30px;
+}
+
+.bttn {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+  pointer-events: none; /* IMPORTANT: click stays on .start */
+
+  transition: transform 0.1s ease;
+}
+
+.start:active {
+  transform: translateY(6px);      /* button goes down */
+  box-shadow: 0 2px 0 #000;        /* shadow collapses */
+}
+
+.start:active .bttn {
+  transform: scale(0.95);          /* subtle press */
+}
+
+
+.start {
+  display: inline-block;
+  padding: 4% 20%;
+  border: solid 3px black;
+  background-color: #ffd400;
+  color: black;
+  border-radius: 50px;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+
+  margin-top: 7%;
+  margin-left: 17%;
+  margin-right: 9%;
+
+  -webkit-tap-highlight-color: transparent; /* Remove blue tint */
+  transition: transform 0.15s ease;
+}
+.start {
+    display: inline-block;
+    padding: 4% 20%;
+    border: solid 3px black;
+    background-color: #ffd400;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+
+    margin-top: 7%;
+    margin-left: 9%;
+    margin-right: 9%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+font-family: 'Poppins', sans-serif;
+}
+
+
+.msg{
+  margin-top: -15px;
+}
+
+.containers {
+    width: 310px;
+    height: 450px;
+    border-radius: 43px;
+    border: solid 5px black;
+    background-color: white;
+}
+
+.down {
+    min-height: calc(100vh - 80px); /* space after header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barcode-result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 90px;
+}
+
+.reader {
+    width: 280px;
+    height: 280px;
+    margin-left:10px ;
+    margin-top: 30px;
+    /* margin: 10px auto; */
+    border: 5px solid black;
+    border-radius:8px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.one,.two, .scan-msg{
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.scan-msg{
+  margin-top: 10px;
+}
+
+.one{
+    margin-top: -20px;
+    font-size: 20px;
+    margin-bottom: -15px;
+}
+.two{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.hiddeen {
+  display: none;
+}
+
+.scan-gif {
+  width:  270px;
+  height: 270px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  margin-left: 19px;
+  border: 1px black;
+  margin-top: 15px;
+
+}
+.border{
+    display: absolute;
+    width:  270px;
+  height: 270px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  /* margin-left: 19px; */
+  border: 1px black;
+}
+
+
+
+.start:focus,
+.start:active {
+  outline: none;
+}
+
+/* The <label> acts as the visual button */
+.bttn {
+
+  transition: transform 0.15s ease;
+  -webkit-tap-highlight-color: transparent; /* Remove blue tint */
+}
+
+/* Hover effect (optional) */
+.start:hover .bttn {
+  transform: translateY(-3px);
+}
+
+/* Click bounce effect */
+.start:active .bttn {
+  transform: scale(0.92) translateY(-6px); /* bounce */
+}
+
+/* Disable blue outline in ALL browsers */
+.bttn:focus {
+  outline: none;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4% 20%;
+  border: 3px solid #000;
+  background-color: #ffd400;
+  border-radius: 50px;
+
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+
+  margin-top: 7%;
+  margin-left: 9%;
+  margin-right: 9%;
+
+  /* 🔥 3D depth */
+  box-shadow: 0 8px 0 #000;
+
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.feedback-btn-first {
+  margin-bottom: 19%;
+  margin-top: -25%;
+  padding: 12px 22px;
+  background-color: #ffd400;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.feedback-btn-first:hover {
+  background-color: #ffcc00;
+  transform: scale(1.05);
+}
+
+/* Global Dark Theme */
+.page.dark-theme {
+  background-color: #0c0c0c;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Tab Status Bar */
+.status-bar {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 0;
+  border-bottom: 1px solid #333;
+  overflow-x: auto;
+}
+
+.tab-group {
+  display: flex;
+  justify-content: space-around;
+  white-space: nowrap;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.tab-item {
+  font-size: 12px;
+  font-weight: 700;
+  color: #555;
+}
+
+.tab-item.active {
+  color: #ffd400;
+  position: relative;
+}
+
+.tab-item.active::before {
+  content: '●';
+  margin-right: 5px;
+}
+
+/* Typography */
+/* Update your .main-title block and add the span rule */
+
+.main-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffd400; /* This makes "PRINTER" stay yellow */
+  margin: 20px 0 10px 0;
+  line-height: 1.1;
+  margin-bottom: 50px;
+}
+
+.main-title span {
+  color: #ffffff; /* This makes "SCAN", "QR", and "CODE" white */
+}
+.sub-text {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+  padding: 0 40px;
+  margin-bottom: 30px;
+}
+
+/* Scanner UI */
+.point-print-badge {
+  background: rgba(255, 212, 0, 0.1);
+  border: 1px solid #ffd400;
+  color: #ffd400;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.scanner-wrapper {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+  background: #1a1a1a;
+  border-radius: 20px;
+}
+
+/* Golden Corners */
+.corner {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 4px solid #ffd400;
+  z-index: 10;
+}
+
+.top-left { top: -5px; left: -5px; border-right: 0; border-bottom: 0; border-top-left-radius: 15px; }
+.top-right { top: -5px; right: -5px; border-left: 0; border-bottom: 0; border-top-right-radius: 15px; }
+.bottom-left { bottom: -5px; left: -5px; border-right: 0; border-top: 0; border-bottom-left-radius: 15px; }
+.bottom-right { bottom: -5px; right: -5px; border-left: 0; border-top: 0; border-bottom-right-radius: 15px; }
+
+.reader-new {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animated Scan Line */
+.scan-line {
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  background: #ffd400;
+  box-shadow: 0 0 15px #ffd400;
+  top: 50%;
+  left: 5%;
+  animation: moveLine 2s infinite ease-in-out;
+}
+
+@keyframes moveLine {
+  0%, 100% { top: 20%; }
+  50% { top: 80%; }
+}
+
+.footer-hint {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #ffd400;
+}
+/* --- Background Animation Styles --- */
+
+.page {
+  position: relative;
+  overflow: hidden; /* Keeps floating items from causing scrollbars */
+}
+
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Behind everything */
+  pointer-events: none; /* User can click through it */
+  
+  /* The subtle grid background seen in the video */
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+/* --- Background Animation Speed Update --- */
+/* --- ENHANCED BACKGROUND ANIMATION --- */
+
+.page {
+  position: relative;
+  overflow: hidden; /* Keeps floating items from causing scrollbars */
+}
+
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Behind everything */
+  pointer-events: none; /* User can click through it */
+  
+  /* The grid background */
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Base style for ALL items - VISIBILITY INCREASED HERE */
+/* --- ENHANCED BACKGROUND ANIMATION --- */
+
+.page {
+  position: relative;
+  overflow: hidden; /* Keeps floating items from causing scrollbars */
+}
+/* --- ADVANCED CYBER-BACKGROUND --- */
+
+:root {
+  --y: #aa9114;
+  --border: rgba(180, 152, 13, 0.12);
+}
+
+.background-animation {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: #1b1b14; /* Deep dark base */
+  overflow: hidden;
+}
+
+/* 1. Top Glow Aura */
+.top-glow {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 212, 0, 0.15) 0%, transparent 50%);
+  animation: glow-breathe 10s ease-in-out infinite;
+}
+
+/* 2. Scanning Grid */
+.grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+
+/* 3. CRT Scanlines */
+.scanlines {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.1) 2px,
+    rgba(0, 0, 0, 0.1) 4px
+  );
+  pointer-events: none;
+}
+
+/* 4. FLOATING ITEMS - High Visibility */
+.floating-item {
+  position: absolute;
+  background: rgba(255, 212, 0, 0.05);
+  border: 1.5px solid var(--y);
+  box-shadow: 0 0 12px rgba(255, 212, 0, 0.3);
+  opacity: 0.8; /* High visibility */
+}
+
+/* Cat Head Item */
+.cat {
+  width: 40px; height: 32px;
+  border-radius: 6px;
+}
+.cat::before, .cat::after {
+  content: ''; position: absolute; top: -8px;
+  border-left: 6px solid transparent; border-right: 6px solid transparent;
+  border-bottom: 9px solid var(--y);
+}
+.cat::before { left: 4px; transform: rotate(-15deg); }
+.cat::after { right: 4px; transform: rotate(15deg); }
+
+/* Paw Item */
+.paw {
+  width: 25px; height: 20px;
+  border-radius: 50%;
+}
+.paw::after {
+  content: '...'; position: absolute; top: -14px; left: 0px;
+  font-size: 20px; color: var(--y); font-weight: bold;
+}
+
+/* Printer Item (Boxy shape) */
+.printer {
+  width: 35px; height: 25px;
+  border-radius: 4px;
+}
+.printer::after {
+  content: ''; position: absolute; bottom: -8px; left: 5px;
+  width: 20px; height: 10px; border: 1.5px solid var(--y); background: var(--y);
+}
+
+/* Paper Sheet Item */
+.paper {
+  width: 28px; height: 36px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.paper::before {
+  content: ''; position: absolute; top: 5px; left: 5px;
+  width: 15px; height: 1.5px; background: var(--y); box-shadow: 0 4px 0 var(--y), 0 8px 0 var(--y);
+}
+
+/* --- ANIMATIONS --- */
+@keyframes glow-breathe {
+  0%, 100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+  50% { opacity: 1; transform: translateX(-50%) scale(1.1); }
+}
+
+.item-1 { top: 10%; left: 15%; animation: float 8s infinite ease-in-out; }
+.item-2 { top: 60%; left: 70%; animation: float 11s infinite linear reverse; }
+.item-3 { top: 35%; left: 10%; animation: float 6s infinite ease-in-out; }
+.item-4 { top: 80%; left: 20%; animation: float 13s infinite linear; }
+.item-5 { top: 20%; left: 85%; animation: float 9s infinite ease-in-out reverse; }
+
+@keyframes float {
+  0% { transform: translate(0,0) rotate(0deg); }
+  33% { transform: translate(30px, -50px) rotate(15deg); }
+  66% { transform: translate(-20px, 20px) rotate(-15deg); }
+  100% { transform: translate(0,0) rotate(0deg); }
+}
+/* Base style for ALL items - VISIBILITY INCREASED HERE */
+
+
+/* Ensure the center area stays above the background */
+.center-area {
+  position: relative;
+  z-index: 1;
+}
+
+CSS
+:root {
+    --y: #FFD400;
+    --g: #00FF9D; /* Neon Green for the 'Ready' state */
+    --gd: rgba(0, 255, 157, 0.2);
+}
+
+/* 1. Centering Container */
+.badge-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+/* 2. Updated Badge with Green accents */
+.point-print-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text); /* Keeping text white for contrast */
+    background: rgba(0, 255, 157, 0.05); /* Subtle green tint */
+    border: 1px solid rgba(0, 255, 157, 0.2);
+    padding: 6px 14px;
+    border-radius: 99px;
+    backdrop-filter: blur(4px);
+}
+
+/* 3. The Green Pulse Dot */
+.dot-blink {
+    width: 8px;
+    height: 8px;
+    background-color: var(--g);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 0 10px var(--g);
+    animation: green-pulse 2s infinite;
+}
+
+/* Enhanced Pulse Keyframe */
+@keyframes green-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 255, 157, 0.7);
+        transform: scale(0.95);
+    }
+    70% {
+        box-shadow: 0 0 0 8px rgba(0, 255, 157, 0);
+        transform: scale(1);
+    }
+    100% {
+        box-shadow: 0 0 0 0px rgba(0, 255, 157, 0);
+        transform: scale(0.95);
+    }
+}
+.maineStyle{
+    margin-left: -6.5%;
+}
+img {
+    height: 7vh; /* Slightly reduced to fit header better */
+    width: auto;
+    padding: 0;
+    margin-left: 20px;
+}

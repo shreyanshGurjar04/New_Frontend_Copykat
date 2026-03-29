@@ -1,0 +1,10 @@
+.maineStyle{
+    margin-left: -6.5%;
+}
+img {
+    height: 8vh; /* Slightly reduced to fit header better */
+    width: auto;
+    padding: 0;
+    margin-left: 0px;
+
+}
